@@ -1,0 +1,9 @@
+export const GET_CATEGORIES = 'getcategories';
+export const LOAD_CATEGORIES = 'loadingcategories';
+export const ERROR_CATEGORIES = 'errorfetchingcategories';
+export const GET_SOURCES = 'getsources';
+export const LOAD_SOURCES = 'loadingsources';
+export const ERROR_SOURCES = 'errorfetchingsources';
+export const GET_NEWS = 'getnews';;
+export const LOAD_NEWS = 'loadingnews';
+export const ERROR_NEWS = 'errorfetchingnews';

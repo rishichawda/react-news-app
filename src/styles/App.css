@@ -1,0 +1,7 @@
+.body {
+  white-space: nowrap
+}
+
+.animated {
+  animation-duration: 0.5s;
+}
