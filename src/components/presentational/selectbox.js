@@ -4,7 +4,7 @@ import styles from '../../styles/appstyles';
 
 const SelectBox = (props) => {
 
-    function handleChange (e) {
+    function handleChange(e) {
         props.onChangeInput(e.target.value);
     }
 
@@ -14,16 +14,15 @@ const SelectBox = (props) => {
         <FormControl className={classes.formControl}>
             <InputLabel htmlFor="cat-helper">{props.label}</InputLabel>
             <Select
-            value={props.value}
-            onChange={handleChange}
-            input={<Input name={props.label} id="cat-helper" />}
+                value={props.value}
+                onChange={handleChange}
+                input={<Input name={props.label} id="cat-helper" />}
             >
-            { props.options.map( item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
+                {props.options.map(item => <MenuItem key={item} value={item}>{item}</MenuItem>)}
             </Select>
             <FormHelperText>{props.helperText}</FormHelperText>
         </FormControl>
     )
 }
-
 
 export default withStyles(styles.selectbox)(SelectBox);

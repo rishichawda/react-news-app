@@ -12,7 +12,7 @@ export function getCategories() {
         const url = `${ROOT_URL}sources?apiKey=${API_KEY}`;
         axios.get(url).then(
             (response) => {
-                if(response.status !== 200) {
+                if (response.status !== 200) {
                     throw Error(response.statusText);
                 }
                 dispatch(loadingCategories(false));
@@ -37,7 +37,6 @@ function recievedCategories(data) {
 }
 
 function loadingCategories(status) {
-    // console.log(status)
     return {
         type: LOAD_CATEGORIES,
         loading: status
@@ -45,7 +44,6 @@ function loadingCategories(status) {
 }
 
 function errFetchCategories(status) {
-    // console.log('error in fetching');
     return {
         type: ERROR_CATEGORIES,
         errorCategories: status
@@ -59,7 +57,7 @@ export function getSources(category) {
         console.log(url);
         axios.get(url).then(
             (response) => {
-                if(response.status !== 200) {
+                if (response.status !== 200) {
                     throw Error(response.statusText);
                 }
                 dispatch(loadingSources(false));
@@ -104,7 +102,7 @@ export function getNews(source, type) {
         const url = `${ROOT_URL}${type}?sources=${source}&pageSize=100&apiKey=${API_KEY}`;
         axios.get(url).then(
             (response) => {
-                if(response.status !== 200) {
+                if (response.status !== 200) {
                     throw Error(response.statusText);
                 }
                 dispatch(loadingNews(false));

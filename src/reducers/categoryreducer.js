@@ -7,7 +7,7 @@ const INITIAL_STATE = Map({
     errorLoading: false
 })
 
-export default function(state = INITIAL_STATE, action) {
+export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case GET_CATEGORIES:
             return state.set('categories', List(action.payload));

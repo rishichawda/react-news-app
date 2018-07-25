@@ -7,7 +7,7 @@ const INITIAL_STATE = Immutable.Map({
     errorLoading: false
 })
 
-export default function(state = INITIAL_STATE, action) {
+export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case GET_NEWS:
             return state.set('news', List(action.payload))

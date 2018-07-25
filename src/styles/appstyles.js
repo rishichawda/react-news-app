@@ -24,28 +24,28 @@ const styles = {
     }),
     newsitem: theme => ({
         card: {
-          maxWidth: '30vw',
-          marginBottom: '2%'
+            maxWidth: '30vw',
+            marginBottom: '2%'
         },
         media: {
-          height: '50%',
-          paddingTop: '56.25%', // 16:9
+            height: '50%',
+            paddingTop: '56.25%', // 16:9
         },
         title: {
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
-          height: '2rem',
-          lineHeight: '1rem',
-          marginTop: theme.spacing.unit
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            height: '2rem',
+            lineHeight: '1rem',
+            marginTop: theme.spacing.unit
         },
         description: {
-          height: '5rem',
-          lineHeight: '1rem',
-          overflow: 'hidden',
-          textOverflow: 'ellipsis', 
-          marginTop: theme.spacing.unit
+            height: '5rem',
+            lineHeight: '1rem',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            marginTop: theme.spacing.unit
         }
-      })
+    })
 }
 
 export default styles;
